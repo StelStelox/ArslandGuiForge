@@ -15,13 +15,13 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-@Mod(Arsland.MODID)
-public class Arsland
+@Mod(ArslandGui.MODID)
+public class ArslandGui
 {
-    public static final String MODID = "arsland";
+    public static final String MODID = "arslandgui";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public Arsland()
+    public ArslandGui()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::commonSetup);
