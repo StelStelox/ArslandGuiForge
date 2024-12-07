@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "ru.arsland_minecraft.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "mixins.arslandgui.refmap.json",
+  "mixins": [
+    "TitleScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
