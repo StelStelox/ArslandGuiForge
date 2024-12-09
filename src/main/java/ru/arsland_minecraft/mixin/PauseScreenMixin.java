@@ -3,8 +3,6 @@ package ru.arsland_minecraft.mixin;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.GenericDirtMessageScreen;
 import net.minecraft.client.gui.screens.PauseScreen;
-import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.client.gui.screens.TitleScreen;
 import net.minecraft.network.chat.Component;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -30,14 +28,7 @@ public abstract class PauseScreenMixin {
         } else {
             minecraft.clearLevel();
         }
-
-        TitleScreen titlescreen = new TitleScreen();
-        if (flag) {
-            minecraft.setScreen(new MainMenu(null, false));
-        } else {
-            minecraft.setScreen(new MainMenu(null, false));
-        }
-
+        minecraft.setScreen(new MainMenu(null, false));
         ci.cancel();
     }
 }

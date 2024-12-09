@@ -17,14 +17,14 @@ import org.jetbrains.annotations.NotNull;
 public class MainMenu extends Screen {
 
     public static final Component COPYRIGHT_TEXT = Component.literal("By ArslandTeam");
-    private final LogoRenderer logoRenderer;
+    private final LogoArslandRender logoRenderer;
     private final boolean fading;
     private long fadeInStart;
     private TitleScreenModUpdateIndicator modUpdateNotification;
 
-    public MainMenu(LogoRenderer logoRenderer, boolean fading) {
+    public MainMenu(LogoArslandRender logoRenderer, boolean fading) {
         super(Component.translatable("narrator.screen.title"));
-        this.logoRenderer = logoRenderer != null ? logoRenderer : new LogoRenderer(false);
+        this.logoRenderer = logoRenderer != null ? logoRenderer : new LogoArslandRender(false);
         this.fading = fading;
     }
 
