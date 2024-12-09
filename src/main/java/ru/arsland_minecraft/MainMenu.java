@@ -49,7 +49,7 @@ public class MainMenu extends Screen {
     }
 
     private void createNormalMenuOptions(int pY, int pRowHeight) {
-        this.addRenderableWidget(Button.builder(Component.translatable("menu.multiplayer"), (p_210872_) -> {ServerData targetServer = new ServerData("Arsland", "s25.joinserver.xyz:25989", false);this.join(targetServer);}).bounds(this.width / 2 - 100, pY, 200, 20).build());
+        this.addRenderableWidget(Button.builder(Component.translatable("main_menu.button.play"), (p_210872_) -> {ServerData targetServer = new ServerData("Arsland", "play.arsland-minecraft.ru", false);this.join(targetServer);}).bounds(this.width / 2 - 100, pY, 200, 20).build());
         this.addRenderableWidget(Button.builder(Component.translatable("menu.singleplayer"), (button) -> this.minecraft.setScreen(new SelectWorldScreen(this))).bounds(this.width / 2 - 100, pY + pRowHeight, 200, 20).build());
     }
 
