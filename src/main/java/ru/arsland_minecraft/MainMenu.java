@@ -8,7 +8,6 @@ import net.minecraft.client.multiplayer.ServerData;
 import net.minecraft.client.multiplayer.resolver.ServerAddress;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.gui.components.LogoRenderer;
 import net.minecraft.util.Mth;
 import net.minecraftforge.client.gui.ModListScreen;
 import net.minecraftforge.client.gui.TitleScreenModUpdateIndicator;
